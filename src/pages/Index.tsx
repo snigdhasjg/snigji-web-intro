@@ -6,8 +6,7 @@ import profileImage from "@/assets/profile.jpeg";
 
 const Index = () => {
   const skills = {
-    languages: ["Java", "Python", "JavaScript", "TypeScript"],
-    frameworks: ["Spring Boot", "React", "Node.js"],
+    languagesFrameworks: ["Java", "Python", "Spring Boot"],
     cloud: ["AWS EKS", "AWS ECS", "AWS S3", "AWS Lambda", "AWS RDS", "Terraform"],
     devops: ["Docker", "Kubernetes", "GitHub Actions", "Jenkins", "Azure DevOps"],
     databases: ["PostgreSQL", "Kafka", "ksqlDB"],
@@ -100,12 +99,6 @@ const Index = () => {
                 LinkedIn
               </a>
             </Button>
-            <Button size="lg" variant="outline" className="glass border-primary/20 hover:border-primary/40" asChild>
-              <a href="https://stackoverflow.com/users/7857701/snigji" target="_blank" rel="noopener noreferrer">
-                <Code2 className="w-4 h-4 mr-2" />
-                StackOverflow
-              </a>
-            </Button>
           </div>
         </div>
       </section>
@@ -170,24 +163,10 @@ const Index = () => {
           <Card className="glass p-6">
             <div className="flex items-center gap-2 mb-4">
               <Code2 className="w-5 h-5 text-primary" />
-              <h3 className="font-bold text-lg">Languages</h3>
+              <h3 className="font-bold text-lg">Languages & Frameworks</h3>
             </div>
             <div className="flex flex-wrap gap-2">
-              {skills.languages.map((skill, i) => (
-                <Badge key={i} className="bg-primary/10 text-primary border-primary/20">
-                  {skill}
-                </Badge>
-              ))}
-            </div>
-          </Card>
-
-          <Card className="glass p-6">
-            <div className="flex items-center gap-2 mb-4">
-              <Server className="w-5 h-5 text-primary" />
-              <h3 className="font-bold text-lg">Frameworks</h3>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {skills.frameworks.map((skill, i) => (
+              {skills.languagesFrameworks.map((skill, i) => (
                 <Badge key={i} className="bg-primary/10 text-primary border-primary/20">
                   {skill}
                 </Badge>
@@ -303,7 +282,7 @@ const Index = () => {
           </div>
           
           <p className="text-muted-foreground text-sm">
-            © 2024 Snigdhajyoti Ghosh. Built with React & Tailwind CSS.
+            © 2025 Snigdhajyoti Ghosh
           </p>
         </div>
       </footer>
