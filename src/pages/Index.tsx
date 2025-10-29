@@ -16,11 +16,11 @@ const Index = () => {
 
   const experiences = [
     {
-      title: "Developer",
+      title: "DevOps Engineer",
       company: "Equal Experts",
       period: "Aug 2023 - Present",
       description: "Building HR SAAS platform with AspNet, DotNet on AWS EKS with Terraform and Docker.",
-      tech: ["AspNet", "DotNet", "AWS EKS", "Terraform", "Docker", "GitHub Actions", "Octopus Deploy"]
+      tech: ["Terraform", "Kubernetes", "Helm", "ArgoCD", "Platform Engineering", "AWS EKS", "AspNet", "DotNet", "Docker", "GitHub Actions", "Octopus Deploy"]
     },
     {
       title: "Senior Consultant",
@@ -73,22 +73,38 @@ const Index = () => {
           </h2>
           
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl leading-relaxed animate-in fade-in slide-in-from-bottom-7 duration-700 delay-500">
-            5 years of experience building scalable microservices, cloud infrastructure, and data pipelines. 
+            6+ years of experience building scalable microservices, cloud infrastructure, and data pipelines. 
             Passionate about solving complex problems with technology and contributing to open source.
           </p>
 
           <div className="flex flex-wrap gap-4 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-700">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-mono glow">
-              <Mail className="w-4 h-4 mr-2" />
-              connect@snigji.com
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-mono glow" asChild>
+              <a href="mailto:connect@snigji.com">
+                <Mail className="w-4 h-4 mr-2" />
+                connect@snigji.com
+              </a>
             </Button>
             <Button size="lg" variant="outline" className="glass border-primary/20 hover:border-primary/40">
               <Phone className="w-4 h-4 mr-2" />
               +91 7428296269
             </Button>
-            <Button size="lg" variant="outline" className="glass border-primary/20 hover:border-primary/40">
-              <Github className="w-4 h-4 mr-2" />
-              GitHub
+            <Button size="lg" variant="outline" className="glass border-primary/20 hover:border-primary/40" asChild>
+              <a href="https://github.com/snigdhasjg" target="_blank" rel="noopener noreferrer">
+                <Github className="w-4 h-4 mr-2" />
+                GitHub
+              </a>
+            </Button>
+            <Button size="lg" variant="outline" className="glass border-primary/20 hover:border-primary/40" asChild>
+              <a href="https://www.linkedin.com/in/snigdhajyoti/" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="w-4 h-4 mr-2" />
+                LinkedIn
+              </a>
+            </Button>
+            <Button size="lg" variant="outline" className="glass border-primary/20 hover:border-primary/40" asChild>
+              <a href="https://stackoverflow.com/users/7857701/snigji" target="_blank" rel="noopener noreferrer">
+                <Code2 className="w-4 h-4 mr-2" />
+                StackOverflow
+              </a>
             </Button>
           </div>
         </div>
@@ -102,7 +118,7 @@ const Index = () => {
             <h2 className="text-3xl font-bold">About</h2>
           </div>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            As a Software Developer with 5 years of experience, I have a passion for using technology to solve complex problems 
+            As a Software Developer with 6+ years of experience, I have a passion for using technology to solve complex problems 
             and improve the user experience. I am dedicated to staying up-to-date with the latest industry trends and advancements, 
             and regularly contribute to open source projects as a way to give back to the tech community. I thrive in fast-paced 
             environments and enjoy working collaboratively with cross-functional teams to deliver high-quality products that meet 
